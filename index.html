@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GE MUSIC</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<button onclick="getlocation()">Geo Location</button>
+	<p id="demo"></p>
+</head>
+<body>
+<header><h1 class="inria-sans-bold-italic">Welcome to GE Music</h1></header>
+<nav>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Drumsticks.html">Drumsticks</a></li>
+  <li><a href="pedals.html">Pedals</a></li>	
+  <li><a href="Videos.html">Videos</a></li>
+  <li style="float:right"><a class="active" href="About.html">Contact</a></li>
+</ul>
+</nav>	
+<div class="flex-container">
+  <div class="makeMeStack" style="flex-grow: 1"><script>
+	function function1() {
+		document.getElementById("demo").innerHTML="What's Up";
+	}
+	</script>
+
+	<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gregenriquez25/video/7414664577687801119" data-video-id="7414664577687801119" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gregenriquez25" href="https://www.tiktok.com/@gregenriquez25?refer=embed">@gregenriquez25</a> <p></p> <a target="_blank" title="♬ original sound - gregenriquez25" href="https://www.tiktok.com/music/original-sound-7414664577537133342?refer=embed">♬ original sound - gregenriquez25</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
+  <div class="makeMeStack" style="flex-grow: 1">Whats are Drums</div>
+  <div class="makeMeStack" style="flex-grow: 1"><p>Drums are percussion instruments that produce sound when struck with sticks, mallets, or hands. They typically consist of a hollow shell covered by a drumhead or membrane, which vibrates to create sound. Drums come in various sizes, shapes, and materials, each offering a distinct tone or pitch. They are a fundamental part of music across cultures and genres, providing rhythm, tempo, and emotional intensity. From traditional hand-played congas to modern drum kits used in rock, jazz, and pop music, drums are essential for creating the pulse that drives musical expression.</p>
+
+<p>Here’s a list of popular drum brands known for their quality and craftsmanship:</p> 
+
+<p>Top 10 Drum Brands</p>
+
+<p>1. Pearl - Renowned for its versatile drum kits, marching drums, and hardware used by drummers of all levels.</p>  
+<p>2. Tama – Known for its durability and innovative designs, popular among rock, metal, and jazz drummers.</p>  
+<p>3. Yamaha – Offers high-quality acoustic and electronic drums with exceptional craftsmanship and sound.</p>  
+<p>4. DW (Drum Workshop) – Premium, high-end custom drum kits and hardware favored by professional drummers. </p> 
+<p>5. Ludwig – A legendary brand famous for its classic vintage sound and iconic snare drums.</p>  
+<p>6. Gretsch – Known for its signature "Great Gretsch Sound," especially loved by jazz, blues, and rock drummers.</p>  
+<p>7. Mapex – Offers affordable, high-quality drum kits for beginners, intermediate, and advanced players.</p>  
+<p>8. Sonor – German-made drums known for precision engineering and a distinct, deep tone.</p>  
+<p>9. PDP (Pacific Drums and Percussion) – A more affordable line from DW, great for beginners and intermediate drummers.</p>  
+<p>10. Craviotto – High-end, boutique drums made from solid, single-ply shells, offering unmatched tonal quality.</p> 
+
+<p>These brands offer a range of options from entry-level kits to high-end, professional-grade instruments.</p> 
+
+</div>
+  </div>
+		
+<footer>Copyright Ale Ballesteros</footer>
+</body>
+	<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</html>

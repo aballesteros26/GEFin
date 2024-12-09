@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+	}
+
+#container{
+	width: 800px;
+		margin: 0 auto;
+}
+body{
+	background-size: cover;	
+	background:url("images/bg1.png");
+	font-size: 20px;
+	color:red;
+	flex-direction: column;
+	margin-top: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(0,0,0,0.75);
+}
+.flex-container > div {
+    background-color:rgba(0,0,0,0.75);
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.stack > div {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.section_L {
+    flex-grow: 3;
+}
+.section_R {
+    flex-grow: 2;
+}
+.flex-responsive {
+    flex: 30%;
+}
+
+
+footer{
+
+		clear:both;
+}
+header >h1{
+	text-align: center;
+	color:red;
+	
+}
+
+#table{
+	border:4px thick;
+	border-collapse: collapse;
+}
+nav{
+	
+}
+article a:link{
+		color:rgba(240,5,9,1.00);
+	}
+article a:hover{
+	font-size: 20px;
+}
+article a:visited{
+	color:cornflowerblue
+}
+article a:active{
+	color:aqua
+}
+.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inria-sans-regular {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-sans-bold {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inria-sans-light-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inria-sans-regular-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inria-sans-bold-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+nav{
+	margin:0 25px 25px 0;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: red;
+}
+nav li {
+	float: left;
+}
+nav li a {
+	display: block;
+	color:aliceblue;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+nav li a:hover:not(.active) {
+	background-color:cornflowerblue;
+}
+button{
+	color:black;
+	}
+
+@media (max-width: 799px) {
+#container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: bisque;
+}
+.flex-responsive {
+    flex: 100%;
+}
+}
+
+@media only screen and (max-width: 1080px) {
+   #container{
+	   width: 90%;
+	}
+	.flex-responsive{
+		flex: 100%;
+	}
+}
+
+@media only screen and (min-width: 1039px) {
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 768px) and (orientation:portrait){
+}
+
+@media print {
+	.flex-container{
+		display: flex;
+		flex-direction: column;			
+		}
+		
+	}
+		
+	
+
+
+
+
+
+
+
+
