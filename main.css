@@ -10,7 +10,7 @@
 }
 body{
 	background-size: cover;	
-	background:url("images 12.33.44 AM/bg1.png");
+	background:rgba(0,0,0,1.00);
 	font-size: 20px;
 	color:red;
 	flex-direction: column;
